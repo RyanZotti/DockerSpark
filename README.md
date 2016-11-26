@@ -10,6 +10,14 @@ Get all of the dependencies. I have saved all of these in my own S3 bucket in ca
 	
 	# Get H2O's sparkling water. I have no idea why AWS made me specify no certificate check to download
 	wget --no-check-certificate https://s3.amazonaws.com/self-driving-car/spark-dependencies/sparkling-water-1.6.1.zip
+	unzip sparkling-water-1.6.1.zip
+	
+	# Get various jars required for H2O to work
+	wget https://s3.amazonaws.com/self-driving-car/spark-dependencies/aws-java-sdk-1.11.49.jar
+	wget https://s3.amazonaws.com/self-driving-car/spark-dependencies/hadoop-aws-2.7.3.jar
+	
+	# Get Anaconda. I use Anaconda for everything
+	wget http://repo.continuum.io/archive/Anaconda3-4.0.0-Linux-x86_64.sh
 
 Steps to run on a Mac:
 
