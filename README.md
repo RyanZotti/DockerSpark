@@ -1,6 +1,6 @@
 ## Instructions
 
-Get all of the dependencies. I have saved all of these in my own S3 bucket in case the people that originally made them stop supporting them
+Get all of the dependencies. I have saved all of these in my own S3 bucket in case the people that originally made them stop supporting them.
 
 	# Get Java 8, required by Spark
 	wget https://s3.amazonaws.com/self-driving-car/spark-dependencies/jdk-8u111-linux-x64.tar.gz
@@ -10,11 +10,6 @@ Get all of the dependencies. I have saved all of these in my own S3 bucket in ca
 	
 	# Get H2O's sparkling water. I have no idea why AWS made me specify no certificate check to download
 	wget --no-check-certificate https://s3.amazonaws.com/self-driving-car/spark-dependencies/sparkling-water-1.6.1.zip
-	
-
-How to get the Spark binary:
-
-	wget http://d3kbcqa49mib13.cloudfront.net/spark-1.6.1-bin-hadoop2.6.tgz
 
 Steps to run on a Mac:
 
